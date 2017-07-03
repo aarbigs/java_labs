@@ -14,6 +14,21 @@ import java.util.Scanner;
 public class Exercise_05 {
 
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = input.nextInt();
+        if (num<=10){
+            if(num==1){
+                System.out.println("ONE");
+            } else if(num==2){
+                System.out.println("TWO");
+            } else if(num==3){
+                System.out.println("NINE");
+            }
+        } else{
+            System.out.println("OTHER");
+        }
+        }
 
     }
-}
+

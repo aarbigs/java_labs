@@ -9,4 +9,10 @@ package Part_02;
  */
 public class Exercise_09 {
 
+    public static void main(String[] args) {
+        String alphabet = "abcdefghijklmnopqrstuvwxyz";
+        do {
+            System.out.println(alphabet[i]);
+        } while
+    }
 }

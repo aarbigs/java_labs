@@ -11,7 +11,11 @@ public class Exercise_10 {
 
     public static void main(String[] strings) {
 
-        //...
+        int distance = 12;
+        double time = 30.5;
+        double hours = time/60;
+        double miles = distance/1.6;
+        System.out.println(miles/hours);
 
     }
 

@@ -11,6 +11,9 @@ public class Exercise_09 {
 
     public static void main(String[] strings) {
 
-        //...
+        double width = 2.4;
+        double height = 6.4;
+        System.out.println("Area = "+width*height);
+        System.out.println("Perimeter ="+(width*2+height*2));
     }
 }

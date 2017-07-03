@@ -20,9 +20,8 @@ public class Exercise_11 {
     public static void main(String[] Strings) {
 
         Scanner input = new Scanner(System.in);
-
         System.out.print("Enter investment amount: ");
-        //...
+
 
         System.out.print("Enter annual interest rate in percentage: ");
         //...

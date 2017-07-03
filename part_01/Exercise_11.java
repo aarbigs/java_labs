@@ -16,8 +16,17 @@ public class Exercise_11 {
 
     public static void main(String[] strings) {
 
-        //...
-
+        int population = 380123456;
+        int days = 365;
+        int personBorn = 6;
+        int personDied = -12;
+        int immigrants = 40;
+        int secondsInADay = 60*60*24;
+        int personsBorninADay = secondsInADay/personBorn;
+        int personsDiedinADay = secondsInADay/personDied;
+        int personsImmigrated = secondsInADay/immigrants;
+        int netPersonsPerDay  = personsBorninADay+personsImmigrated+personsDiedinADay;
+        System.out.println(netPersonsPerDay*days*3+population);
 
     }
 }

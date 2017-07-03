@@ -14,6 +14,10 @@ import java.util.Scanner;
 public class Exercise_03 {
 
     public static void main(String[] args) {
-
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter length in feet: ");
+        double feet = input.nextDouble();
+        double meters = feet*.305;
+        System.out.printf("Length in meters = "+meters);
     }
 }

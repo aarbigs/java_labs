@@ -23,6 +23,7 @@ public class Exercise_02 {
         double radius = input.nextDouble();
         System.out.print("Enter length: ");
         double length = input.nextDouble();
-        //...
+        System.out.println("Area = "+(radius*radius*3.1415));
+        System.out.println("Volume ="+(radius*radius*3.1415*length));
     }
 }
