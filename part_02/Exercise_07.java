@@ -1,4 +1,4 @@
-package Part_02;
+package part_02;
 
 import java.util.Scanner;
 
@@ -18,8 +18,11 @@ public class Exercise_07 {
         System.out.print("Enter a number of minutes up to 1,000,000,000: ");
         Scanner input = new Scanner(System.in);
         int num = input.nextInt();
-        double years = num/60/24/365;
-        double days = years%1*365;
+        int minutesInYear = 60*24*365;
+        int minutesInDay = 60*24;
+        int years = num/minutesInYear;
+        int daysMod = num%minutesInYear;
+        int days = daysMod/minutesInDay;
         if (num > 525600 && num <= 1000000000){
             System.out.println(years+" years and "+days+" days");
         } else if (num >= 1440 && num <=525600){
