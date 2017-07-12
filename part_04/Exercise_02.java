@@ -8,3 +8,14 @@ package part_04;
 
  */
 
+class CountTo2017 {
+    public static void main(String[] args) {
+        int[] countup = new int[2018];
+        for (int i = 1; i < 2018; i++){
+            countup[i] = i;
+        }
+        for (int j = countup.length-1; j >=0; j-=2){
+            System.out.println(countup[j]);
+        }
+    }
+}

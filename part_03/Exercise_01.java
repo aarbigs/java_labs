@@ -16,6 +16,7 @@ import java.util.Scanner;
  **/
 class Controller {
     public static void main(String[] Strings) {
+
         System.out.print("Enter a number of seconds to exercise: ");
         Scanner input = new Scanner(System.in);
 
@@ -67,6 +68,7 @@ class Controller {
                         String study = input.next();
                         Study studying = new Study(study,howLongStudy);
                         System.out.println("Good job we are studying "+studying.study+"for"+studying.howLongStudy+"hours");
+
                     }
                 }
 
@@ -115,3 +117,5 @@ class Exercise {
 
     }
 }
+
+

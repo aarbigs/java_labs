@@ -8,3 +8,71 @@ package part_05;
  * within each instance of Class_02 to modify Class_02's private instance variables.
  *
  */
+class ClassA {
+    public static void main(String[] args) {
+        ClassB classb = new ClassB(1,2);
+        System.out.println(classb.getNum3());
+    }
+
+}
+
+class ClassB {
+    private int num1;
+    private int num2;
+    private int num3;
+
+    public ClassB(){}
+
+
+    public ClassB(int num1, int num2, int num3) {
+        this.num1 = num1;
+        this.num2 = num2;
+        this.num3 = num3;
+    }
+
+    public ClassB(int num1, int num2){
+        this.num1 = num1;
+        this.num2 = num2;
+    }
+
+    public ClassB(int num1) {
+        this.num1 = num1;
+    }
+
+    public int getNum1() {
+        return num1;
+    }
+
+    public void setNum1(int num1) {
+        this.num1 = num1;
+    }
+
+    public int getNum2() {
+        return num2;
+    }
+
+    public void setNum2(int num2) {
+        this.num2 = num2;
+    }
+
+    public int getNum3() {
+        return num3;
+    }
+
+    public void setNum3(int num3) {
+        this.num3 = num3;
+    }
+
+
+    public int multiply2(){
+        return num1 * num2;
+    }
+
+    public int multiply2(int a, int b){
+        return a * b;
+    }
+
+    public int multiply2(int a){
+        return a * num1;
+    }
+}
